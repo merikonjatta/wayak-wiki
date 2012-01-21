@@ -99,7 +99,7 @@ $wgUpgradeKey = "9b01587049e00a2b";
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'standard', 'nostalgia', 'cologneblue', 'monobook', 'vector':
-$wgDefaultSkin = "vector";
+$wgDefaultSkin = "cavendish";
 
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
@@ -127,3 +127,10 @@ $wgGroupPermissions['*']['edit'] = false;
 # Add more configuration options below.
 
 $wgShowExceptionDetails = true;
+
+# Cavendish skin settings
+$cavendishLogoURL = "$wgStylePath/wayak/logo.png";
+$cavendishLogoWidth = 105;
+$cavendishLogoHeight = 36;
+$cavendishLogoMargin = 20;
+$cavendishSiteWidth = 960;
