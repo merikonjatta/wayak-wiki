@@ -99,7 +99,7 @@ $wgUpgradeKey = "9b01587049e00a2b";
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'standard', 'nostalgia', 'cologneblue', 'monobook', 'vector':
-$wgDefaultSkin = "cavendish";
+$wgDefaultSkin = "vector";
 
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
@@ -126,3 +126,4 @@ $wgGroupPermissions['*']['edit'] = false;
 # End of automatically generated settings.
 # Add more configuration options below.
 
+$wgShowExceptionDetails = true;
