@@ -133,4 +133,4 @@ $cavendishLogoURL = "$wgStylePath/wayak/logo.png";
 $cavendishLogoWidth = 105;
 $cavendishLogoHeight = 36;
 $cavendishLogoMargin = 20;
-$cavendishSiteWidth = 960;
+$cavendishSiteWith = 960;
