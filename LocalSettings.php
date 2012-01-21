@@ -130,7 +130,7 @@ $wgShowExceptionDetails = true;
 
 # Cavendish skin settings
 $cavendishLogoURL = "$wgStylePath/wayak/logo.png";
-$cavendishLogoWidth = 105;
+$cavendishLogoWidth = 135;
 $cavendishLogoHeight = 36;
 $cavendishLogoMargin = 20;
 $cavendishSiteWith = 960;
