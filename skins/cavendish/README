@@ -1,21 +1,22 @@
-README file for Cavendish-MW
-============================
+There are different options that can be set in LocalSettings.php
 
+$cavendishLogoURL
+Link to the Logo that should be displayed in the header
 
-Installation Instructions
-=========================
+$cavendishLogoWidth
+width of the logo as a number in px
+ 
+$cavendishLogoHeight
+height of the logo as a number in px
+ 
+$cavendishLogoMargin
+offset on top of the logo
+ 
+$cavendishSiteWith
+fixed width of the content area, if not set it's dynamic
 
-To install the Cavendish skin, extract the files from the archive to the
-"skins" folder of your MediaWiki installation.
+$cavendishExtensionCSS
+set this to false if you do not want to use Cavendish CSS for Extensions
 
-In your MediaWiki Preferences page, click on the Appearance tab, select the
-skin you would like to use for your account and click Save.
-
-If you want to set the default skin to Cavendish, open LocalSettings.php
-and add/modify the $wgDefaultSkin. The name should be in lowercase,
-
-$wgDefaultSkin = 'cavendish';
-
-The default is,
-
-$wgDefaultSkin = 'monobook';
+Bug reports can be made here
+http://sourceforge.net/apps/trac/wecowi
