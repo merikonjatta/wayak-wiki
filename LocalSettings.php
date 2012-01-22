@@ -167,6 +167,9 @@ $wgGroupPermissions['editor']['minoredit']        = true;
 $wgGroupPermissions['editor']['purge']            = true; // can use ?action=purge without clicking "ok"
 $wgGroupPermissions['editor']['sendemail']        = true;
 
+# The autoconfirmed group dosn't do anything
+$wgGroupPermissions['autoconfirmed'] = array();
+
 
 $wgEnableAPI = true;
 $wgEnableWriteAPI = true;
