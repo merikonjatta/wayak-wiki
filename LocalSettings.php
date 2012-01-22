@@ -123,8 +123,30 @@ $wgDiff3 = "/usr/bin/diff3";
 # that value)
 $wgResourceLoaderMaxQueryLength = -1;
 
-# The following permissions were set based on your choice in the installer
-$wgGroupPermissions['*']['edit'] = false;
+# Group permissions
+# Visitors may read only and create accounts
+$wgGroupPermissions['*']['createaccount']    = true;
+$wgGroupPermissions['*']['read']             = true;
+$wgGroupPermissions['*']['edit']             = false;
+$wgGroupPermissions['*']['createpage']       = false;
+$wgGroupPermissions['*']['createtalk']       = false;
+$wgGroupPermissions['*']['writeapi']         = false;
+
+# Logged in users can read only
+$wgGroupPermissions['user']['move-subpages']    = false;
+$wgGroupPermissions['user']['move-rootuserpages'] = false;
+//$wgGroupPermissions['user']['movefile']         = false;     // Disabled for now due to possible bugs and security concerns
+$wgGroupPermissions['user']['edit']             = false;
+$wgGroupPermissions['user']['createpage']       = false;
+$wgGroupPermissions['user']['createtalk']       = false;
+$wgGroupPermissions['user']['writeapi']         = false;
+$wgGroupPermissions['user']['upload']           = false;
+$wgGroupPermissions['user']['reupload']         = false;
+$wgGroupPermissions['user']['reupload-shared']  = false;
+$wgGroupPermissions['user']['minoredit']        = false;
+$wgGroupPermissions['user']['purge']            = false; // can use ?action=purge without clicking "ok"
+$wgGroupPermissions['user']['sendemail']        = false;
+$wgGroupPermissions['editor']['edit'] = true;
 
 
 # End of automatically generated settings.
