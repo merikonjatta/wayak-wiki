@@ -127,30 +127,14 @@ $wgResourceLoaderMaxQueryLength = -1;
 # Add more configuration options below.
 
 # Group permissions
-# Visitors may read only and create accounts
+# Visitors may only read and create accounts
 $wgGroupPermissions['*'] = array();
 $wgGroupPermissions['*']['createaccount']    = true;
 $wgGroupPermissions['*']['read']             = true;
-
-# Logged in users and the autoconfirmed group can read only
-$wgGroupPermissions['user'] = array();
+# Logged in users and the autoconfirmed group can read only,
+# unless their email is confirmed
 $wgGroupPermissions['autoconfirmed'] = array();
-
-# Email-confirmed people can do all editing actions 
-$wgGroupPermissions['emailconfirmed']['move']             = true;
-$wgGroupPermissions['emailconfirmed']['move-subpages']    = true;
-$wgGroupPermissions['emailconfirmed']['move-rootuserpages'] = true;
-//$wgGroupPermissions['emailconfirmed']['movefile']         = true;     // Disabled for now due to possible bugs and security concerns
-$wgGroupPermissions['emailconfirmed']['edit']             = true;
-$wgGroupPermissions['emailconfirmed']['createpage']       = true;
-$wgGroupPermissions['emailconfirmed']['createtalk']       = true;
-$wgGroupPermissions['emailconfirmed']['writeapi']         = true;
-$wgGroupPermissions['emailconfirmed']['upload']           = true;
-$wgGroupPermissions['emailconfirmed']['reupload']         = true;
-$wgGroupPermissions['emailconfirmed']['reupload-shared']  = true;
-$wgGroupPermissions['emailconfirmed']['minoredit']        = true;
-$wgGroupPermissions['emailconfirmed']['purge']            = true; // can use ?action=purge without clicking "ok"
-$wgGroupPermissions['emailconfirmed']['sendemail']        = true;
+$wgEmailConfirmToEdit = true;
 
 $wgEnableAPI = true;
 $wgEnableWriteAPI = true;
