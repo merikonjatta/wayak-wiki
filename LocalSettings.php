@@ -126,6 +126,9 @@ $wgGroupPermissions['*']['edit'] = false;
 # End of automatically generated settings.
 # Add more configuration options below.
 
+$wgEnableAPI = true;
+$wgEnableWriteAPI = true;
+
 $wgShowExceptionDetails = true;
 
 # Cavendish skin settings
