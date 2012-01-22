@@ -50,11 +50,13 @@ $wgEnotifWatchlist     = false; # UPO
 $wgEmailAuthentication = true;
 
 ## Database settings
-$wgDBtype           = "sqlite";
-$wgDBserver         = "";
+//$wgDBtype           = "sqlite";
+//$wgDBname           = "wayak";
+$wgDBtype           = "mysql"
+$wgDBserver         = "localhost";
 $wgDBname           = "wayak";
-$wgDBuser           = "";
-$wgDBpassword       = "";
+$wgDBuser           = "wayak";
+$wgDBpassword       = file_get_contents("$IP/db_password.txt");
 
 # SQLite-specific settings
 $wgSQLiteDataDir    = "/home/marco/sites/wayak/data";
