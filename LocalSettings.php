@@ -134,6 +134,7 @@ $wgEnableAPI = true;
 $wgEnableWriteAPI = true;
 $wgNamespacesWithSubpages[NS_MAIN] = true;
 $wgShowExceptionDetails = true;
+$wgShowSQLErrors = true;
 
 require_once( "$IP/extensions/SubPageList/SubPageList.php" );
 require_once("$IP/extensions/Cite/Cite.php");
