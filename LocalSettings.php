@@ -137,9 +137,10 @@ $wgShowExceptionDetails = true;
 $wgShowSQLErrors = true;
 
 require_once( "$IP/extensions/SubPageList/SubPageList.php" );
-require_once("$IP/extensions/Cite/Cite.php");
+require_once( "$IP/extensions/Cite/Cite.php");
 require_once( "$IP/extensions/Validator/Validator.php" );
 include_once( "$IP/extensions/SemanticMediaWiki/SemanticMediaWiki.php" );
+require_once( "$IP/extensions/ParserFunctions/ParserFunctions.php" );
 enableSemantics('wayak.uni-kaji.com');
 
 # Cavendish skin settings
