@@ -39,7 +39,7 @@ $wgLogo             = "$wgStylePath/common/images/logo.png";
 
 ## UPO means: this is also a user preference option
 
-$wgEnableEmail      = false;
+$wgEnableEmail      = true;
 $wgEnableUserEmail  = true; # UPO
 
 $wgEmergencyContact = "apache@wayak.uni-kaji.com";
@@ -128,28 +128,13 @@ $wgResourceLoaderMaxQueryLength = -1;
 
 # Group permissions
 # Visitors may read only and create accounts
+$wgGroupPermissions['*'] = array();
 $wgGroupPermissions['*']['createaccount']    = true;
 $wgGroupPermissions['*']['read']             = true;
-$wgGroupPermissions['*']['edit']             = false;
-$wgGroupPermissions['*']['createpage']       = false;
-$wgGroupPermissions['*']['createtalk']       = false;
-$wgGroupPermissions['*']['writeapi']         = false;
 
-# Logged in users can read only
-$wgGroupPermissions['user']['move']             = false;
-$wgGroupPermissions['user']['move-subpages']    = false;
-$wgGroupPermissions['user']['move-rootuserpages'] = false;
-//$wgGroupPermissions['user']['movefile']         = false;     // Disabled for now due to possible bugs and security concerns
-$wgGroupPermissions['user']['edit']             = false;
-$wgGroupPermissions['user']['createpage']       = false;
-$wgGroupPermissions['user']['createtalk']       = false;
-$wgGroupPermissions['user']['writeapi']         = false;
-$wgGroupPermissions['user']['upload']           = false;
-$wgGroupPermissions['user']['reupload']         = false;
-$wgGroupPermissions['user']['reupload-shared']  = false;
-$wgGroupPermissions['user']['minoredit']        = false;
-$wgGroupPermissions['user']['purge']            = false; // can use ?action=purge without clicking "ok"
-$wgGroupPermissions['user']['sendemail']        = false;
+# Logged in users and the autoconfirmed group can read only
+$wgGroupPermissions['user'] = array();
+$wgGroupPermissions['autoconfirmed'] = array();
 
 # The Editor can do all editing actions 
 $wgGroupPermissions['editor']['move']             = true;
@@ -166,10 +151,6 @@ $wgGroupPermissions['editor']['reupload-shared']  = true;
 $wgGroupPermissions['editor']['minoredit']        = true;
 $wgGroupPermissions['editor']['purge']            = true; // can use ?action=purge without clicking "ok"
 $wgGroupPermissions['editor']['sendemail']        = true;
-
-# The autoconfirmed group dosn't do anything
-$wgGroupPermissions['autoconfirmed'] = array();
-
 
 $wgEnableAPI = true;
 $wgEnableWriteAPI = true;
