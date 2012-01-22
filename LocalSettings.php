@@ -42,8 +42,8 @@ $wgLogo             = "$wgStylePath/common/images/logo.png";
 $wgEnableEmail      = true;
 $wgEnableUserEmail  = true; # UPO
 
-$wgEmergencyContact = "apache@wayak.uni-kaji.com";
-$wgPasswordSender   = "apache@wayak.uni-kaji.com";
+$wgEmergencyContact = "mediawiki@wayak.uni-kaji.com";
+$wgPasswordSender   = "mediawiki@wayak.uni-kaji.com";
 
 $wgEnotifUserTalk      = false; # UPO
 $wgEnotifWatchlist     = false; # UPO
@@ -136,21 +136,21 @@ $wgGroupPermissions['*']['read']             = true;
 $wgGroupPermissions['user'] = array();
 $wgGroupPermissions['autoconfirmed'] = array();
 
-# The Editor can do all editing actions 
-$wgGroupPermissions['editor']['move']             = true;
-$wgGroupPermissions['editor']['move-subpages']    = true;
-$wgGroupPermissions['editor']['move-rooteditorpages'] = true;
-//$wgGroupPermissions['editor']['movefile']         = true;     // Disabled for now due to possible bugs and security concerns
-$wgGroupPermissions['editor']['edit']             = true;
-$wgGroupPermissions['editor']['createpage']       = true;
-$wgGroupPermissions['editor']['createtalk']       = true;
-$wgGroupPermissions['editor']['writeapi']         = true;
-$wgGroupPermissions['editor']['upload']           = true;
-$wgGroupPermissions['editor']['reupload']         = true;
-$wgGroupPermissions['editor']['reupload-shared']  = true;
-$wgGroupPermissions['editor']['minoredit']        = true;
-$wgGroupPermissions['editor']['purge']            = true; // can use ?action=purge without clicking "ok"
-$wgGroupPermissions['editor']['sendemail']        = true;
+# Email-confirmed people can do all editing actions 
+$wgGroupPermissions['emailconfirmed']['move']             = true;
+$wgGroupPermissions['emailconfirmed']['move-subpages']    = true;
+$wgGroupPermissions['emailconfirmed']['move-rootuserpages'] = true;
+//$wgGroupPermissions['emailconfirmed']['movefile']         = true;     // Disabled for now due to possible bugs and security concerns
+$wgGroupPermissions['emailconfirmed']['edit']             = true;
+$wgGroupPermissions['emailconfirmed']['createpage']       = true;
+$wgGroupPermissions['emailconfirmed']['createtalk']       = true;
+$wgGroupPermissions['emailconfirmed']['writeapi']         = true;
+$wgGroupPermissions['emailconfirmed']['upload']           = true;
+$wgGroupPermissions['emailconfirmed']['reupload']         = true;
+$wgGroupPermissions['emailconfirmed']['reupload-shared']  = true;
+$wgGroupPermissions['emailconfirmed']['minoredit']        = true;
+$wgGroupPermissions['emailconfirmed']['purge']            = true; // can use ?action=purge without clicking "ok"
+$wgGroupPermissions['emailconfirmed']['sendemail']        = true;
 
 $wgEnableAPI = true;
 $wgEnableWriteAPI = true;
