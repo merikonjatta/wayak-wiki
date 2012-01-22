@@ -123,6 +123,9 @@ $wgDiff3 = "/usr/bin/diff3";
 # that value)
 $wgResourceLoaderMaxQueryLength = -1;
 
+# End of automatically generated settings.
+# Add more configuration options below.
+
 # Group permissions
 # Visitors may read only and create accounts
 $wgGroupPermissions['*']['createaccount']    = true;
@@ -133,6 +136,7 @@ $wgGroupPermissions['*']['createtalk']       = false;
 $wgGroupPermissions['*']['writeapi']         = false;
 
 # Logged in users can read only
+$wgGroupPermissions['user']['move']             = false;
 $wgGroupPermissions['user']['move-subpages']    = false;
 $wgGroupPermissions['user']['move-rootuserpages'] = false;
 //$wgGroupPermissions['user']['movefile']         = false;     // Disabled for now due to possible bugs and security concerns
@@ -146,11 +150,23 @@ $wgGroupPermissions['user']['reupload-shared']  = false;
 $wgGroupPermissions['user']['minoredit']        = false;
 $wgGroupPermissions['user']['purge']            = false; // can use ?action=purge without clicking "ok"
 $wgGroupPermissions['user']['sendemail']        = false;
-$wgGroupPermissions['editor']['edit'] = true;
 
+# The Editor can do all editing actions 
+$wgGroupPermissions['editor']['move']             = true;
+$wgGroupPermissions['editor']['move-subpages']    = true;
+$wgGroupPermissions['editor']['move-rooteditorpages'] = true;
+//$wgGroupPermissions['editor']['movefile']         = true;     // Disabled for now due to possible bugs and security concerns
+$wgGroupPermissions['editor']['edit']             = true;
+$wgGroupPermissions['editor']['createpage']       = true;
+$wgGroupPermissions['editor']['createtalk']       = true;
+$wgGroupPermissions['editor']['writeapi']         = true;
+$wgGroupPermissions['editor']['upload']           = true;
+$wgGroupPermissions['editor']['reupload']         = true;
+$wgGroupPermissions['editor']['reupload-shared']  = true;
+$wgGroupPermissions['editor']['minoredit']        = true;
+$wgGroupPermissions['editor']['purge']            = true; // can use ?action=purge without clicking "ok"
+$wgGroupPermissions['editor']['sendemail']        = true;
 
-# End of automatically generated settings.
-# Add more configuration options below.
 
 $wgEnableAPI = true;
 $wgEnableWriteAPI = true;
