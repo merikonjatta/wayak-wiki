@@ -132,6 +132,9 @@ $wgEnableWriteAPI = true;
 $wgShowExceptionDetails = true;
 
 require_once("$IP/extensions/Cite/Cite.php");
+require_once( "$IP/extensions/Validator/Validator.php" );
+include_once( "$IP/extensions/SemanticMediaWiki/SemanticMediaWiki.php" );
+enableSemantics('wayak.uni-kaji.com');
 
 # Cavendish skin settings
 $cavendishLogoURL = "$wgStylePath/wayak/logo.png";
