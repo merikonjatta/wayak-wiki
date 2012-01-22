@@ -126,6 +126,10 @@ $wgResourceLoaderMaxQueryLength = -1;
 # End of automatically generated settings.
 # Add more configuration options below.
 
+# Local timezone
+$wgLocalTimezone = "Asia/Tokyo";
+$wgLocalTZoffset = 9*60;
+
 # Group permissions
 # Visitors may only read and create accounts
 $wgGroupPermissions['*'] = array();
