@@ -52,7 +52,7 @@ $wgEmailAuthentication = true;
 ## Database settings
 //$wgDBtype           = "sqlite";
 //$wgDBname           = "wayak";
-$wgDBtype           = "mysql"
+$wgDBtype           = "mysql";
 $wgDBserver         = "localhost";
 $wgDBname           = "wayak";
 $wgDBuser           = "wayak";
