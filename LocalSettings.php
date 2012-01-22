@@ -131,6 +131,8 @@ $wgEnableWriteAPI = true;
 
 $wgShowExceptionDetails = true;
 
+require_once("$IP/extensions/Cite/Cite.php");
+
 # Cavendish skin settings
 $cavendishLogoURL = "$wgStylePath/wayak/logo.png";
 $cavendishLogoWidth = 135;
