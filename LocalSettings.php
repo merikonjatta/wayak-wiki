@@ -123,6 +123,7 @@ $wgDiff3 = "/usr/bin/diff3";
 # that value)
 $wgResourceLoaderMaxQueryLength = -1;
 
+########################################################################
 # End of automatically generated settings.
 # Add more configuration options below.
 
@@ -140,6 +141,15 @@ $wgGroupPermissions['*']['read']             = true;
 $wgGroupPermissions['autoconfirmed'] = array();
 $wgEmailConfirmToEdit = true;
 
+# Upload extensions
+$wgFileExtensions = array(
+	'png', 'jpg', 'jpeg', 'gif', 'bmp',
+	'txt', 'doc', 'docx', 'xls', 'xlsx', 'csv', 'tsv', 'ppt', 'pptx',
+	'ps', 'ai', 'pdf', 'epub', 'mobi',
+	'zip', 'tar', 'gz', '7z'
+);
+
+# API and Error reporting
 $wgEnableAPI = true;
 $wgEnableWriteAPI = true;
 $wgNamespacesWithSubpages[NS_MAIN] = true;
