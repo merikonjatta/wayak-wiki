@@ -56,7 +56,7 @@ $wgDBtype           = "mysql";
 $wgDBserver         = "localhost";
 $wgDBname           = "wayak";
 $wgDBuser           = "wayak";
-$wgDBpassword       = file_get_contents("$IP/db_password.txt");
+$wgDBpassword       = trim(file_get_contents("$IP/db_password.txt"));
 $wgDBprefix         = "mw";
 $wgDBTableOptions   = "ENGINE=InnoDB, DEFAULT CHARSET=utf8";
 
