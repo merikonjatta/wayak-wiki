@@ -128,6 +128,7 @@ $wgGroupPermissions['*']['edit'] = false;
 
 $wgEnableAPI = true;
 $wgEnableWriteAPI = true;
+$wgNamespacesWithSubpages[NS_MAIN] = true;
 
 $wgShowExceptionDetails = true;
 
