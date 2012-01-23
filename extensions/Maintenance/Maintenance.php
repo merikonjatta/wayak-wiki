@@ -22,13 +22,13 @@ $wgExtensionCredits['specialpage'][] = array(
 	'author' => 'Ryan Schmidt',
 	'version' => '2.0.0',
 	'descriptionmsg' => 'maintenance-desc',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:Maintenance',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:Maintenance',
 );
 
 // Set up the new special page
 $dir = dirname(__FILE__) . '/';
 $wgExtensionMessagesFiles['Maintenance'] = $dir . 'Maintenance.i18n.php';
-$wgExtensionAliasesFiles['Maintenance'] = $dir . 'Maintenance.alias.php';
+$wgExtensionMessagesFiles['MaintenanceAlias'] = $dir . 'Maintenance.alias.php';
 $wgAutoloadClasses['SpecialMaintenance'] = $dir . 'Maintenance_body.php';
 $wgSpecialPages['Maintenance'] = 'SpecialMaintenance';
 // Special page group for MW 1.13+

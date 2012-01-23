@@ -83,7 +83,7 @@ $messages['en'] = array(
 	'maintenance-checkBadRedirects' => 'Use this form to see if pages marked as redirects really are redirects',
 	'maintenance-checkBadRedirects-desc' => 'Check for bad redirects',
 	'maintenance-checkBadRedirects-output-header' => 'Fetching redirects...',
-	'maintenance-checkBadRedirects-output-found' => "Found \$1 redirects.\nChecking for bad redirects...\n", #$1=number of redirects
+	'maintenance-checkBadRedirects-output-found' => "Found \$1 redirects.\nChecking for bad redirects...", #$1=number of redirects
 	'maintenance-checkBadRedirects-output-footer' => "\nDone.",
 	// checkImages
 	'maintenance-checkImages' => 'Use this form to see which images on your server are corrupted',
@@ -333,10 +333,11 @@ Aborting move',
  * @author Siebrand
  * @author The Evil IP address
  * @author Translationista
+ * @author Umherirrender
  */
 $messages['qqq'] = array(
 	'maintenance-desc' => '{{desc}}',
-	'right-maintenance' => '{{doc-right}}',
+	'right-maintenance' => '{{doc-right|maintenance}}',
 	'maintenance-error-badini' => 'Do not translate the <code>metadata.ini</code> part.',
 	'maintenance-generic-username' => '{{Identical|Username}}',
 	'maintenance-generic-password' => '{{Identical|Password}}',
@@ -356,22 +357,6 @@ Are UPDATE and DELETE/INSERT also translatable?",
 	'maintenance-re-rr' => '* $1 is substituted by {{msg-mw|maintenance-re-report}}',
 );
 
-/** Faeag Rotuma (Faeag Rotuma)
- * @author Jose77
- */
-$messages['rtm'] = array(
-	'maintenance-name' => 'Asa',
-	'maintenance-password' => 'Ou password',
-);
-
-/** Niuean (ko e vagahau Niuē)
- * @author Jose77
- */
-$messages['niu'] = array(
-	'maintenance-name' => 'Matahigoa he tagata',
-	'maintenance-password' => 'Kupu fufu',
-);
-
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
  * @author Naudefj
@@ -388,13 +373,6 @@ $messages['af'] = array(
 	'maintenance-memc-total' => 'totaal:',
 	'maintenance-memc-invalid' => 'ongeldig:',
 	'maintenance-memc-absent' => 'afwesig:',
-);
-
-/** Amharic (አማርኛ)
- * @author Codex Sinaiticus
- */
-$messages['am'] = array(
-	'maintenance-reason' => 'ምክንያት',
 );
 
 /** Aragonese (Aragonés)
@@ -416,7 +394,7 @@ $messages['ar'] = array(
 	'maintenance-backlink' => 'الرجوع إلى اختيار السكريبت',
 	'maintenance-header' => 'من فضلك اختر سكريبت بالأسفل للتنفيذ.
 الوصوفات بجانب كل سكريبت',
-	'maintenance-error-invalidtype' => 'نوع غير صحيح!',
+	'maintenance-error-invalidtype' => 'السكريبت المحدد لم يتم العثور عليه',
 	'maintenance-generic-username' => 'اسم المستخدم',
 	'maintenance-generic-password' => 'كلمة السر',
 	'maintenance-generic-reason' => 'السبب',
@@ -504,10 +482,6 @@ $messages['ar'] = array(
  * @author Basharh
  */
 $messages['arc'] = array(
-	'maintenance-name' => 'ܫܡܐ ܕܡܦܠܚܢܐ',
-	'maintenance-password' => 'ܡܠܬܐ ܕܥܠܠܐ',
-	'maintenance-reason' => 'ܥܠܬܐ',
-	'maintenance-confirm' => 'ܚܬܬ',
 	'maintenance-deleted' => 'ܫܝܦܬ',
 	'maintenance-stats-pages' => 'ܡܢܝܢܐ ܕܕ̈ܦܐ: $1',
 	'maintenance-stats-users' => 'ܡܢܝܢܐ ܕܡܦܠܚܢ̈ܐ: $1',
@@ -622,6 +596,7 @@ $messages['az'] = array(
 	'maintenance-option-confirm' => 'Təsdiq et',
 	'maintenance-checkBadRedirects-output-footer' => '
 Oldu.',
+	'maintenance-deleted' => 'SİLİNİB',
 	'maintenance-error' => 'Xəta: $1',
 	'maintenance-memc-total' => 'ümumi:',
 );
@@ -1020,7 +995,7 @@ E pep linenn e rankimp kaout ar bajenn orin hag ar bajenn da dizhout dispartiet 
 	'maintenance-update' => 'Ha c\'hoant hoc\'h eus da implijout an doare "UPDATE" evit hizivaat war-eeun un daolenn? Diaskit an dibarzh evit implijout kentoc\'h "DELETE/INSERT" e plas.',
 	'maintenance-noviews' => 'Askit kement-mañ evit enebiñ ouzh hizivadenn an niver a weladennoù evit ar pajennoù.',
 	'maintenance-invalidname' => 'Anv implijer fall !',
-	'maintenance-userexists' => 'An implijer zo anezhañ dija !',
+	'maintenance-userexists' => "An implijer-mañ zo anezhañ c'hoazh !",
 	'maintenance-invalidtitle' => 'Titl fall "$1" !',
 	'maintenance-titlenoexist' => 'N\'eus ket eus an titl bet lakaet ("$1") !',
 	'maintenance-failed' => "C'HWITET",
@@ -1036,8 +1011,8 @@ E pep linenn e rankimp kaout ar bajenn orin hag ar bajenn da dizhout dispartiet 
 	'maintenance-stats-views' => 'Niver a bajennoù gwelet : $1',
 	'maintenance-stats-update' => "Oc'h hizivaat an diaz roadennoù{{int:ellipsis}}",
 	'maintenance-move' => "Dilec'hiañ $1 da $2{{int:ellipsis}}",
-	'maintenance-movefail' => "Ur fazi 'zo bet e-pad an adenvel : $1.
-Harzet eo bet an dilerc'hiañ.",
+	'maintenance-movefail' => "Ur fazi zo bet e-pad an adenvel : $1.
+Harzet eo bet an dilec'hiañ.",
 	'maintenance-error' => 'Fazi : $1',
 	'maintenance-memc-fake' => "Emaoc'h oc'h implijout FakeMemCachedClient. Ne vo ket tu kaout a stadegoù.",
 	'maintenance-memc-requests' => 'Rekedoù',
@@ -1185,18 +1160,6 @@ $messages['ca'] = array(
 	'maintenance-stats-users' => "Nombre d'usuaris: $1",
 );
 
-/** Chechen (Нохчийн) */
-$messages['ce'] = array(
-	'maintenance-reason' => 'Бахьан',
-);
-
-/** Church Slavic (Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
- * @author ОйЛ
- */
-$messages['cu'] = array(
-	'maintenance-name' => 'по́льꙃєватєлꙗ и́мѧ',
-);
-
 /** German (Deutsch)
  * @author ChrisiPK
  * @author DaSch
@@ -1340,7 +1303,7 @@ Je Zeile eine durch einen senkrechten Strich („|“) getrennte Quell- sowie Zi
 	'maintenance-update' => 'UPDATE zum Aktualisieren von Tabellen verwenden? Wenn nicht aktiviert, wird DELETE/INSERT verwendet.',
 	'maintenance-noviews' => 'Aktualisierung des Seitenaufrufszählers deaktivieren',
 	'maintenance-invalidname' => 'Ungültiger Benutzername!',
-	'maintenance-userexists' => 'Benutzer existiert bereits!',
+	'maintenance-userexists' => 'Der Benutzer ist bereits vorhanden.',
 	'maintenance-invalidtitle' => 'Ungültiger Titel „$1“!',
 	'maintenance-titlenoexist' => 'Der angegebene Titel („$1“) existiert nicht!',
 	'maintenance-failed' => 'GESCHEITERT',
@@ -1400,7 +1363,7 @@ $messages['dsb'] = array(
 	'maintenance-backlink' => 'Slědk k wuběrkoju skriptow',
 	'maintenance-header' => 'Pšosym wubjeŕ skript za wuwjaźenje.
 Wopisanja su pódla wótpowědnego skripta.',
-	'maintenance-error-invalidtype' => 'Njepłaśiwy typ!',
+	'maintenance-error-invalidtype' => 'Pódany skript njejo se namakał',
 	'maintenance-option-confirm' => 'Wobkšuśiś',
 	'maintenance-output-success' => '$1 wuspěšnje wuwjeźony!',
 	'maintenance-changePassword' => 'Wužyj toś ten formular, aby změnił gronidło wužywarja',
@@ -1582,6 +1545,7 @@ $messages['eo'] = array(
 /** Spanish (Español)
  * @author Crazymadlover
  * @author Dferg
+ * @author Fitoschido
  * @author Imre
  * @author Locos epraix
  * @author Mor
@@ -1635,7 +1599,7 @@ Cada línea debería especificar una página fuente y página destino separadas 
 	'maintenance-eval-desc' => 'Evaluar código PHP en ambiente MediaWiki',
 	'maintenance-update' => '¿Utilizar UPDATE cuando se actualiza una tabla? Si está desmarcado utiliza DELETE/INSERT en lugar de UPDATE.',
 	'maintenance-noviews' => 'Verificar esto para evitar la actualización del número de vistas a la página',
-	'maintenance-invalidname' => 'Nombre de usuario inválido!',
+	'maintenance-invalidname' => '¡Nombre de usuario no válido!',
 	'maintenance-userexists' => 'Usuario ya existe!',
 	'maintenance-invalidtitle' => 'Título inválido "$1"!',
 	'maintenance-titlenoexist' => 'Título especificado ("$1") no existe!',
@@ -1814,6 +1778,7 @@ Keskeytetään siirto',
  * @author Justadust
  * @author Marc-André Beauchamp
  * @author PieRRoMaN
+ * @author Urhixidur
  * @author Verdy p
  * @author Zetud
  */
@@ -1969,7 +1934,7 @@ Déplacement interrompu.',
 	'maintenance-memc-withsession' => 'avec la session :',
 	'maintenance-memc-withoutsession' => 'sans la session :',
 	'maintenance-memc-total' => 'total :',
-	'maintenance-memc-parsercache' => 'Cache parseur',
+	'maintenance-memc-parsercache' => 'Cache de l’analyseur syntaxique',
 	'maintenance-memc-hits' => 'clics :',
 	'maintenance-memc-invalid' => 'incorrects :',
 	'maintenance-memc-expired' => 'expirés :',
@@ -2003,8 +1968,8 @@ $messages['frp'] = array(
 	'maintenance' => 'Lanciér los scriptes de mantegnence',
 	'maintenance-backlink' => 'Retôrn u chouèx du scripte',
 	'maintenance-generic-done' => 'fêt',
-	'maintenance-generic-username' => 'Nom d’utilisator',
-	'maintenance-generic-password' => 'Mot de pâssa',
+	'maintenance-generic-username' => 'Nom d’usanciér',
+	'maintenance-generic-password' => 'Contresegno',
 	'maintenance-generic-reason' => 'Rêson',
 	'maintenance-cleanupTable-dry-run' => 'Fâre un passâjo sen changiér la bâsa de balyês',
 	'maintenance-cleanupTable-check' => 'Contrôlo des crouyos titros...',
@@ -2021,9 +1986,9 @@ $messages['frp'] = array(
 	'maintenance-output-failure' => '$1 s’est pas dèroulâ avouéc reusséta !',
 	'maintenance-attachLatest-output-done' => 'Fêt ! $1 pâges trètâs.',
 	'maintenance-benchmarkPurge-output-trial' => '$1 titros en $2 ms ($3 ms châque)',
-	'maintenance-changePassword-desc' => 'Changiér lo mot de pâssa a un utilisator',
-	'maintenance-changePassword-error-nouser' => 'Gins d’utilisator : $1',
-	'maintenance-changePassword-output-set' => 'Mot de pâssa dèfeni por $1',
+	'maintenance-changePassword-desc' => 'Changiér lo contresegno a un usanciér',
+	'maintenance-changePassword-error-nouser' => 'Gins d’usanciér : $1',
+	'maintenance-changePassword-output-set' => 'Contresegno dèfeni por $1',
 	'maintenance-checkAutoLoader-desc' => 'Contrôlos d’entègritât du chargior ôtomatico',
 	'maintenance-checkAutoLoader-output-list2' => '$1 : crouyo fichiér : trovâ dens $2, listâ dens $3',
 	'maintenance-checkBadRedirects-desc' => 'Rechèrchiér des crouyes redirèccions',
@@ -2042,7 +2007,7 @@ Rechèrche de les crouyes redirèccions...',
 	'maintenance-checkSyntax-output-warning' => 'Avèrtissement dens lo fichiér $1 : $2 trovâ',
 	'maintenance-checkSyntax-error-nofile' => 'Èrror : pôt pas trovar lo fichiér ou ben lo rèpèrtouèro $1',
 	'maintenance-checkSyntax-error-cantopen' => 'Empossiblo d’uvrir lo fichiér $1',
-	'maintenance-checkUsernames-error-notvalid' => 'Nom d’utilisator envalido : « $3 » (numerô d’utilisator $2)',
+	'maintenance-checkUsernames-error-notvalid' => 'Nom d’usanciér envalido : « $3 » (numerô d’usanciér $2)',
 	'maintenance-cleanupCaps-output-islower' => '« $1 » ja en petiôtes lètres.',
 	'maintenance-cleanupCaps-output-clash' => '« $1 » ignorâ ; « $2 » ègziste ja',
 	'maintenance-cleanupCaps-output-dryrun' => '« $1 » -> « $2 » : FÔRMA ÈPRÔVA, PAS DÈPLACIÊ',
@@ -2052,8 +2017,8 @@ Rechèrche de les crouyes redirèccions...',
 	'maintenance-sql-desc' => 'Ègzécutar una requéta SQL',
 	'maintenance-sql-option-file' => 'SQL a ègzécutar',
 	'maintenance-sql-output-aff' => 'Requéta OK, $1 {{PLURAL:$1|entrâ afèctâ|entrâs afèctâs}}',
-	'maintenance-invalidname' => 'Nom d’utilisator envalido !',
-	'maintenance-userexists' => 'L’utilisator ègziste ja !',
+	'maintenance-invalidname' => 'Nom d’usanciér envalido !',
+	'maintenance-userexists' => 'L’usanciér ègziste ja !',
 	'maintenance-invalidtitle' => 'Titro envalido « $1 » !',
 	'maintenance-titlenoexist' => 'Lo titro spècefiâ (« $1 ») ègziste pas !',
 	'maintenance-failed' => 'FALYITA',
@@ -2063,7 +2028,7 @@ Rechèrche de les crouyes redirèccions...',
 	'maintenance-stats-edits' => 'Nombro de changements : $1',
 	'maintenance-stats-articles' => 'Nombro de pâges dens l’èspâço de noms principâl : $1',
 	'maintenance-stats-pages' => 'Nombro de pâges : $1',
-	'maintenance-stats-users' => 'Nombro d’utilisators : $1',
+	'maintenance-stats-users' => 'Nombro d’usanciérs : $1',
 	'maintenance-stats-admins' => 'Nombro d’administrators : $1',
 	'maintenance-stats-images' => 'Nombro de fichiérs : $1',
 	'maintenance-stats-views' => 'Nombro de pâges vues : $1',
@@ -2087,7 +2052,7 @@ Dèplacement arrètâ',
 	'maintenance-memc-updates' => 'betâs a jorn :',
 	'maintenance-memc-uncacheable' => 'en defôr du cache :',
 	'maintenance-memc-diffcache' => 'Cache des dif',
-	'maintenance-re-nf' => 'L’utilisator « $1 » at pas étâ trovâ',
+	'maintenance-re-nf' => 'L’usanciér « $1 » at pas étâ trovâ',
 	'maintenance-re-ce' => 'Changements d’ora : $1',
 	'maintenance-re-de' => 'Changements suprimâs : $1',
 	'maintenance-re-rce' => 'Entrâs dens la trâbla des dèrriérs changements : $1',
@@ -2095,18 +2060,10 @@ Dèplacement arrètâ',
 	'maintenance-re-re' => 'Rèafèctacion des changements{{int:ellipsis}} fêta',
 );
 
-/** Western Frisian (Frysk)
- * @author Snakesteuben
- */
-$messages['fy'] = array(
-	'maintenance-name' => 'Meidoggernamme',
-);
-
 /** Irish (Gaeilge)
  * @author Alison
  */
 $messages['ga'] = array(
-	'maintenance-reason' => 'Fáth',
 	'maintenance-invalidname' => 'Ainm úsáideoir neamhbhailí!',
 	'maintenance-invalidtitle' => 'Teideal neamhbhailí "$1"!',
 	'maintenance-deleted' => 'SCRIOSTA',
@@ -2144,7 +2101,7 @@ As descricións están ao lado de cada escritura',
 	'maintenance-cleanupTable-missingparam' => '$1: Falta o parámetro $2',
 	'maintenance-cleanupTable-processing' => 'Procesando $1...',
 	'maintenance-cleanupTable-finished' => 'Terminado $1... $2 de $3 liñas actualizadas',
-	'maintenance-option-quiet' => 'Eliminar a saída de todo aquilo que non sexa un error',
+	'maintenance-option-quiet' => 'Eliminar a saída de todo aquilo que non sexa un erro',
 	'maintenance-option-globals' => 'Mostrar as variables globais da fin do proceso de depuración',
 	'maintenance-option-confirm' => 'Confirmar',
 	'maintenance-option-batch-size' => 'Executar este número de operacións por conxunto de tarefas; por defecto: $1',
@@ -2230,7 +2187,7 @@ Poña só un número de revisión por liña',
 	'maintenance-initStats' => 'Use este formulario para volver calcular as estatísticas do sitio, especificando se tamén quere calcular de novo as vistas por páxina',
 	'maintenance-initStats-desc' => 'Volver calcular as estatísticas do sitio',
 	'maintenance-moveBatch' => 'Use este formulario para mover páxinas en masa.
-Cada liña debería especificar unha fonte e destino da páxina separados por unha barra (“|”)',
+Cada liña debería especificar unha fonte e destino da páxina separados por unha barra vertical ("|")',
 	'maintenance-moveBatch-desc' => 'Mover páxinas masivamente',
 	'maintenance-reassignEdits-desc' => 'Reasignar as edicións dun usuario a outro',
 	'maintenance-runJobs-desc' => 'Executar os traballos na cola de traballo',
@@ -2239,14 +2196,14 @@ Cada liña debería especificar unha fonte e destino da páxina separados por un
 	'maintenance-runJobs-option-procs' => 'Número de procesos a usar',
 	'maintenance-runJobs-option-exclusive' => 'Execute exclusivamente unha soa escritura runJobs á vez. O tempo de espera é de 1800 segundos.',
 	'maintenance-runJobs-error-invalidprocs' => 'Ten que especificar entre 1 e 1000 procesos',
-	'maintenance-showJobs-desc' => 'Amosar a lista dos traballos pendentes na cola de traballo',
+	'maintenance-showJobs-desc' => 'Mostrar a lista dos traballos pendentes na cola de traballo',
 	'maintenance-showJobs-option-group' => 'Mostrar o número de tarefas por tipo de tarefas',
 	'maintenance-sql' => 'Use este formulario para executar unha pescuda SQL na base de datos.',
 	'maintenance-sql-desc' => 'Executar unha pescuda SQL',
 	'maintenance-sql-option-file' => 'SQL a executar',
 	'maintenance-sql-output-aff' => 'Pescuda correcta, $1 {{PLURAL:$1|liña afectada|liñas afectadas}}',
 	'maintenance-sql-error-cantopen' => 'Non se pode abrir o ficheiro de entrada',
-	'maintenance-stats-desc' => 'Amosar as estatísticas da memoria caché',
+	'maintenance-stats-desc' => 'Mostrar as estatísticas da memoria caché',
 	'maintenance-eval' => 'Use este formulario para avaliar o código PHP no ambiente MediaWiki.',
 	'maintenance-eval-desc' => 'Avaliar o código PHP no ambiente MediaWiki',
 	'maintenance-update' => 'Desexa usar ACTUALIZAR ao actualizar unha táboa? Se non marca a opción, usarase, no canto diso, BORRAR/INSERTAR.',
@@ -2293,7 +2250,7 @@ Cancelando a operación',
 	'maintenance-re-force' => 'Reasignar incluso se o usuario non existe',
 	'maintenance-re-rc' => 'Non actualizar a táboa de cambios recentes',
 	'maintenance-re-report' => 'Imprimir os detalles do que será cambiado, pero non actualizalo',
-	'maintenance-re-nf' => 'O usuario "$1" non foi atopado',
+	'maintenance-re-nf' => 'Non se atopou o usuario "$1"',
 	'maintenance-re-rr' => 'Executar de novo a escritura sen "$1" para actualizar.',
 	'maintenance-re-ce' => 'Edicións actuais: $1',
 	'maintenance-re-de' => 'Edicións borradas: $1',
@@ -2315,6 +2272,7 @@ $messages['grc'] = array(
 );
 
 /** Swiss German (Alemannisch)
+ * @author Als-Chlämens
  * @author Als-Holder
  */
 $messages['gsw'] = array(
@@ -2325,6 +2283,10 @@ $messages['gsw'] = array(
 	'maintenance-header' => 'Bitte wehl e Skript uus, wu soll uusgfiert wäre.
 Bschrybige stehn näbe jedem Skript.',
 	'maintenance-error-invalidtype' => 'Nit giltige Typ!',
+	'maintenance-generic-done' => 'erledigt',
+	'maintenance-generic-username' => 'Benutzername',
+	'maintenance-generic-password' => 'Passwort',
+	'maintenance-generic-reason' => 'Grund',
 	'maintenance-option-confirm' => 'Bstätige',
 	'maintenance-output-success' => '$1 erfolgrych uusgfiert!',
 	'maintenance-changePassword' => 'Passwort vun eme Benutzer ändere',
@@ -2405,34 +2367,11 @@ Verschieben abbroche',
 	'maintenance-re-re' => 'Nejzueornig vu dr Bearbeitige … gmacht',
 );
 
-/** Gujarati (ગુજરાતી)
- * @author Dineshjk
- */
-$messages['gu'] = array(
-	'maintenance-name' => 'સભ્ય નામ',
-);
-
 /** Manx (Gaelg)
  * @author Shimmin Beg
  */
 $messages['gv'] = array(
 	'maintenance-generic-reason' => 'Fa:',
-);
-
-/** Hakka (Hak-kâ-fa)
- * @author Hakka
- */
-$messages['hak'] = array(
-	'maintenance-name' => 'Yung-fu-miàng',
-);
-
-/** Hawaiian (Hawai`i)
- * @author Kalani
- * @author Singularity
- */
-$messages['haw'] = array(
-	'maintenance-password' => 'ʻŌlelo hūnā',
-	'maintenance-reason' => 'Kumu',
 );
 
 /** Hebrew (עברית)
@@ -2988,7 +2927,7 @@ Cata linea debe specificar un pagina de origine e un pagina de destination separ
 	'maintenance-update' => 'Usar UPDATE pro actualisar un tabella? Dismarca pro usar DELETE/INSERT in vice.',
 	'maintenance-noviews' => 'Marca isto pro impedir le actualisation del numero de visitas de paginas.',
 	'maintenance-invalidname' => 'Nomine de usator invalide!',
-	'maintenance-userexists' => 'Le usator existe ja!',
+	'maintenance-userexists' => 'Le usator existe jam!',
 	'maintenance-invalidtitle' => 'Titulo invalide "$1"!',
 	'maintenance-titlenoexist' => 'Le titulo specificate ("$1") non existe!',
 	'maintenance-failed' => 'FALTA',
@@ -3158,19 +3097,6 @@ Pemindahan dibatalkan',
 	'maintenance-re-rce' => 'Entri PerubahanTerbaru: $1',
 	'maintenance-re-total' => 'Entri total untuk diubah: $1',
 	'maintenance-re-re' => 'Pengalihan suntingan{{int:ellipsis}} berhasil',
-);
-
-/** Igbo (Igbo) */
-$messages['ig'] = array(
-	'maintenance-password' => 'Mkpurụ okwu ejị a gafẹ',
-	'maintenance-reason' => 'Mgbaghaputa:',
-);
-
-/** Icelandic (Íslenska)
- * @author S.Örvarr.S
- */
-$messages['is'] = array(
-	'maintenance-password' => 'Lykilorð',
 );
 
 /** Italian (Italiano)
@@ -3363,13 +3289,6 @@ $messages['ja'] = array(
 	'maintenance-re-re' => '編集の再割り当て… 完了',
 );
 
-/** Georgian (ქართული)
- * @author Malafaya
- */
-$messages['ka'] = array(
-	'maintenance-reason' => 'მიზეზი',
-);
-
 /** Khmer (ភាសាខ្មែរ)
  * @author Lovekhmer
  * @author Thearith
@@ -3417,8 +3336,6 @@ $messages['km'] = array(
  * @author Nayvik
  */
 $messages['kn'] = array(
-	'maintenance-password' => 'ಪ್ರವೇಶಪದ',
-	'maintenance-reason' => 'ಕಾರಣ',
 	'maintenance-memc-total' => 'ಒಟ್ಟು:',
 );
 
@@ -3454,7 +3371,7 @@ Donn dat Zohsatzprojramm <code lang="en">Maintenance</code> norr_ens neu eronger
 	'maintenance-cleanupTable-progress' => '$1 $2: $3% op $4 jedonn; bruch wall noch $5 [$6 vun $7] $8 pro Sekund <$9% sin ald aanjepaß>',
 	'maintenance-cleanupTable-missingparam' => '$1: Dä Parrammeeter $2 fählt',
 	'maintenance-cleanupTable-processing' => 'Ben $1 aam beärbeide&nbsp;…',
-	'maintenance-cleanupTable-finished' => 'Fäädesch met $1. Han $2 vun $3 Daatesäz beärbeidt.',
+	'maintenance-cleanupTable-finished' => 'Fäädesch met $1. Han {{PLURAL:$2|eine|$2|keine}} vun {{PLURAL:$3|einem Daatesaz|$3 Daatesäz|keine Daatesäz}} beärbeidt.',
 	'maintenance-option-quiet' => 'Donn de Ußjaabe ußer Fählermädonge ongerdröcke.',
 	'maintenance-option-globals' => 'Donn aam Engk zom Prööfe de jlobaale Varijaable ußjävve.',
 	'maintenance-option-confirm' => 'Bestätije',
@@ -3646,6 +3563,7 @@ D'Beschreiwunge stinn niewent all Script.",
 	'maintenance-option-optional' => '(optional)',
 	'maintenance-output-success' => '$1 ass gemaach ginn!',
 	'maintenance-output-failure' => '$1 huet net richteg fonctionnéiert!',
+	'maintenance-attachLatest-output-begin' => 'No Säite sichen an deene page_latest op 0 steet...',
 	'maintenance-attachLatest-output-done' => 'Fäerdeg! $1 Säite goufe behandelt.',
 	'maintenance-benchmarkPurge-output-trial' => '$1 Titelen a(n) $2ms ($3ms an der Moyenne)',
 	'maintenance-changePassword' => "Dëse Formulaire benotze fir engem Benotzer säi Passwuert z'änneren",
@@ -3664,14 +3582,18 @@ No Falsche Viruleedunge sichen...',
 	'maintenance-checkImages-output-noaccess' => '$1: ass lokal net accessibel',
 	'maintenance-checkImages-output-missing' => '$1: feelt',
 	'maintenance-checkImages-output-isdir' => '$1: ass e Repertoire',
+	'maintenance-checkImages-output-truncated' => '$1: ofgeschnidden, et war $2',
 	'maintenance-checkImages-output-good' => 'Gutt Biller: $1/$2',
 	'maintenance-checkSyntax' => "Dëse Formulaire benotze fir d'Syntax vun alle PHP-Fichiere vu MediaWiki nozekucken.",
+	'maintenance-checkSyntax-desc' => 'Syntax vun alle PHP-Fichieren vu MediaWiki nokucken',
+	'maintenance-checkSyntax-option-list-file' => 'Lëscht vun de Fichieren oder Repertoiren déi nogekuckt musse ginn',
 	'maintenance-checkSyntax-output-footer' => 'Fäerdeg! $1 Fichieren nogekuckt, $2 Feeler fonnt a(n) $3 Warnunge kritt',
 	'maintenance-checkSyntax-output-buildlist' => "D'Lëscht vun de Fichiere gëtt opgebaut...",
 	'maintenance-checkSyntax-output-error' => 'Feeler am $1, Linn $2:$3',
 	'maintenance-checkSyntax-output-warning' => 'Warnung am Fichier $1: $2 fonnt',
 	'maintenance-checkSyntax-error-nofile' => 'Feeler: De Fichier oder de Repertoire $1 gouf net fonnt.',
 	'maintenance-checkSyntax-error-cantopen' => 'De Fichier $1 kann net opgemaach ginn',
+	'maintenance-checkUsernames-desc' => "Nokucken ob d'Benotzernimm vun der Datebank valabel sinn",
 	'maintenance-checkUsernames-error-notvalid' => 'Net valabele Benotzernumm: „$3“ (Benotzer ID $2)',
 	'maintenance-cleanupCaps-output-islower' => '"$1" ass scho kleng geschriwwen.',
 	'maintenance-cleanupCaps-output-clash' => '"$1" iwwersprong; "$2" gëtt et schonn',
@@ -3693,9 +3615,11 @@ An all Linn soll en Quellsäit an eng Zilsäit, getrennt duerch een ''<nowiki>|<
 	'maintenance-moveBatch-desc' => 'Vill Säite matenee réckelen',
 	'maintenance-reassignEdits-desc' => 'Ännerunge vun engem Benotzer engem aneren zouweisen',
 	'maintenance-runJobs-desc' => 'Aarbechten an der Queue vun den Aarbechte starten',
+	'maintenance-runJobs-error-invalidprocs' => 'Dir musst zwëschen 1 an 1000 Prozesser uginn',
 	'maintenance-showJobs-desc' => "Weis d'Lësccht vun den Aarbechten déi nach an der ''Queue'' stinn",
 	'maintenance-sql' => 'Dëse Formaulaire benotze fir eng SQL-Ufro an der Datebank ze maachen.',
 	'maintenance-sql-desc' => 'Eng SQL-Ufro ausféieren',
+	'maintenance-sql-option-file' => 'SQL-Ufro déi ausgeféiert gi soll',
 	'maintenance-stats-desc' => 'Statistiken vun der Cache Memoire weisen',
 	'maintenance-eval' => 'Benotzt dëse Formulaire fir PHP-Code am MediaWiki-Kontext ze bewerten',
 	'maintenance-eval-desc' => 'PHP-Code am MediaWiki-Kontext bewerten',
@@ -3757,15 +3681,6 @@ Réckelen ofgebrach',
  */
 $messages['lfn'] = array(
 	'maintenance-stats-edits' => 'Numero de cambias: $1',
-);
-
-/** Eastern Mari (Олык Марий)
- * @author Сай
- */
-$messages['mhr'] = array(
-	'maintenance-name' => 'Пайдаланышын лӱмжӧ',
-	'maintenance-password' => 'Шолыпмут',
-	'maintenance-reason' => 'Амал',
 );
 
 /** Macedonian (Македонски)
@@ -4098,14 +4013,6 @@ $messages['ms'] = array(
 	'maintenance-deleted' => 'DIHAPUSKAN',
 );
 
-/** Maltese (Malti)
- * @author Chrisportelli
- * @author Roderick Mallia
- */
-$messages['mt'] = array(
-	'maintenance-name' => 'Isem tal-utent',
-);
-
 /** Erzya (Эрзянь)
  * @author Botuzhaleny-sodamo
  */
@@ -4137,6 +4044,144 @@ $messages['nah'] = array(
 	'maintenance-move' => 'Mozacacah $1 īhuīc $2{{int:ellipsis}}',
 	'maintenance-memc-total' => 'mochīntīn:',
 	'maintenance-memc-expired' => 'ōmotlami:',
+);
+
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ * @author Nghtwlkr
+ * @author Simny
+ */
+$messages['nb'] = array(
+	'maintenance' => 'Kjør vedlikeholdsskript',
+	'maintenance-desc' => '[[Special:Maintenance|Nettgrensesnitt]] for ulike vedlikeholdsskript',
+	'right-maintenance' => 'Kjør vedlikeholdsskript gjennom [[Special:Maintenance]]',
+	'maintenance-backlink' => 'Tilbake til skriptvalget',
+	'maintenance-header' => 'Velg et skript å utføre nedenfor.
+Beskrivelser gis ved siden av hvert skript.',
+	'maintenance-error-badini' => 'Filen metadata.ini er enten skadet eller mangler. Last den ned utvidelsen Maintenance på nytt.',
+	'maintenance-error-invalidtype' => 'Det angitte skriptet ble ikke funnet',
+	'maintenance-error-badargs' => 'Du spesifiserte ikke alle de nødvendige alternativene',
+	'maintenance-generic-done' => 'ferdig',
+	'maintenance-generic-username' => 'Brukernavn',
+	'maintenance-generic-password' => 'Passord',
+	'maintenance-generic-reason' => 'Årsak',
+	'maintenance-cleanupTable-dry-run' => 'Utfør en tørrkjøring',
+	'maintenance-cleanupTable-check' => 'Ser etter dårlige titler...',
+	'maintenance-cleanupTable-checkfix' => 'Ser etter og fikser dårlige titler...',
+	'maintenance-cleanupTable-progress' => '$1 $2: $3% ferdig på $4; Antatt ferdig $5 [$6/$7] $8/sek <$9% oppdatert>',
+	'maintenance-cleanupTable-missingparam' => '$1: Mangler parameter $2',
+	'maintenance-cleanupTable-processing' => 'Behandler $1...',
+	'maintenance-cleanupTable-finished' => 'Ferdig $1... $2 av $3 rader oppdatert',
+	'maintenance-option-quiet' => 'Undertrykk utdata for ikke-feil',
+	'maintenance-option-confirm' => 'Bekreft',
+	'maintenance-option-required' => '(påkrevd)',
+	'maintenance-option-optional' => '(valgfri)',
+	'maintenance-output-success' => '$1 ble gjennomført uten uhell.',
+	'maintenance-benchmarkPurge-output-numsquids' => 'Det er $1 definerte Squid-tjenere:',
+	'maintenance-benchmarkPurge-output-trial' => '$1 titler på $2ms ($3ms hver)',
+	'maintenance-changePassword' => 'Bruk dette skjemaet for å endre en brukers passord',
+	'maintenance-changePassword-desc' => 'Endre en brukers passord',
+	'maintenance-changePassword-error-nouser' => 'Ingen slik bruker: $1',
+	'maintenance-changePassword-output-set' => 'Passord satt for $1',
+	'maintenance-checkAutoLoader' => 'Bruk dette skjemaet for å gjøre tilregnelighetssjekker på AutoLoader',
+	'maintenance-checkAutoLoader-desc' => 'AutoLoader tilregnelighetssjekker',
+	'maintenance-checkAutoLoader-output-list2' => '$1: Feil fil: fant i $2, listet i $3',
+	'maintenance-checkBadRedirects' => 'Bruk dette skjemaet for å se om sider markert som omdirigeringer faktisk er omdirigeringer',
+	'maintenance-checkBadRedirects-desc' => 'Ser etter dårlige omdirigeringer',
+	'maintenance-checkBadRedirects-output-header' => 'Henter omdirigeringer...',
+	'maintenance-checkBadRedirects-output-found' => 'Fant $1 omdirigeringer.
+Ser etter dårlige omdirigeringer...',
+	'maintenance-checkBadRedirects-output-footer' => '
+Ferdig.',
+	'maintenance-checkImages' => 'Bruk dette skjemaet for å se hvilke bilder på tjeneren din som er skadet',
+	'maintenance-checkImages-desc' => 'Sjekk bilder for å se om de finnes, er lesbare, etc',
+	'maintenance-checkImages-output-noaccess' => '$1: ikke tilgjengelig lokalt',
+	'maintenance-checkImages-output-missing' => '$1: mangler',
+	'maintenance-checkImages-output-isdir' => '$1: er en mappe',
+	'maintenance-checkImages-output-truncated' => '$1: trunkert, var $2',
+	'maintenance-checkImages-output-mismatch' => '$1: avvikende størrelse DB=$2, faktisk=$3',
+	'maintenance-checkImages-output-good' => 'Gode bilder: $1/$2',
+	'maintenance-checkSyntax' => 'Bruk dette skjemaet for å sjekke syntaksen til alle PHP-filene i MediaWiki',
+	'maintenance-checkSyntax-desc' => 'Sjekk syntaksen for alle PHP-filene i MediaWiki',
+	'maintenance-checkSyntax-output-buildlist' => 'Bygger filliste...',
+	'maintenance-checkSyntax-output-error' => 'Feil i $1 linje $2: $3',
+	'maintenance-checkSyntax-output-warning' => 'Advarsel i fil $1: $2 funnet',
+	'maintenance-checkSyntax-error-nofile' => 'Feil: finner ikke fil eller mappe $1',
+	'maintenance-checkSyntax-error-cantopen' => 'Kan ikke åpne fil $1',
+	'maintenance-createAndPromote' => 'Bruk dette skjemaet for å opprette en ny bruker og gjøre den til administrator.
+Kryss av i byråkratboksen om du ønsker å gjøre den til byråkrat også',
+	'maintenance-createAndPromote-desc' => 'Opprett en bruker og gjør til administrator',
+	'maintenance-deleteBatch' => 'Bruk dette skjemaet for å slette mange sider på én gang.
+Skriv én sidetittel per rad',
+	'maintenance-deleteBatch-desc' => 'Slett mange sider',
+	'maintenance-deleteRevision' => 'Bruk dette skjemaet for å slette mange revisjoner på én gang.
+Skriv ett revisjonsnummer per rad',
+	'maintenance-deleteRevision-desc' => 'Fjern revisjoner fra databasen',
+	'maintenance-initEditCount-desc' => 'Regne om redigeringstelleren for brukere',
+	'maintenance-initStats' => 'Bruk dette skjemaet for å regne ut sidestatistikken på nytt, spesielt om du vil regne ut sidevisninger på nytt',
+	'maintenance-initStats-desc' => 'Regne om sidestatistikken',
+	'maintenance-moveBatch' => 'Bruk dette skjemaet for å flytte mange sider på én gang.
+Hver linje bør oppgi kildeside og målside adskilt med strek (|)',
+	'maintenance-moveBatch-desc' => 'Flytte mange sider',
+	'maintenance-reassignEdits-desc' => 'Flytt endringer fra en bruker til en annen',
+	'maintenance-runJobs-desc' => 'Kjøre jobber i jobbkøen',
+	'maintenance-showJobs-desc' => 'Vise en liste over jobber som venter i jobbkøen',
+	'maintenance-sql' => 'Bruk dette skjemaet for å utføre en SQL-spørring på databasen.',
+	'maintenance-sql-desc' => 'Utfør en SQL-spørring',
+	'maintenance-stats-desc' => 'Vis mellomlagret statistikk',
+	'maintenance-eval' => 'Bruk dette skjemaet for å evaluere PHP-kode i MediaWiki-miljøet.',
+	'maintenance-eval-desc' => 'Evaluer PHP-kode i MediaWiki-omgivelsene',
+	'maintenance-update' => 'Bruk UPDATE under oppdatering av tabell? Om uavkrysset brukes DELETE/INSERT i stedet.',
+	'maintenance-noviews' => 'Kryss av her for ikke å oppdatere sidevisninger',
+	'maintenance-invalidname' => 'Ugyldig brukernavn.',
+	'maintenance-userexists' => 'Brukeren finnes allerede.',
+	'maintenance-invalidtitle' => 'Ugyldig tittel «$1».',
+	'maintenance-titlenoexist' => 'Den oppgitte tittelen («$1») finnes ikke.',
+	'maintenance-failed' => 'MISLYKTES',
+	'maintenance-deleted' => 'SLETTET',
+	'maintenance-revdelete' => 'Sletter {{PLURAL:$3|revisjonen|revisjonene}} $1 fra wikien $2',
+	'maintenance-revnotfound' => 'Revisjon $1 ikke funnet.',
+	'maintenance-stats-edits' => 'Antal redigeringer: $1',
+	'maintenance-stats-articles' => 'Antall sider i hovednavnerommet: $1',
+	'maintenance-stats-pages' => 'Antall sider: $1',
+	'maintenance-stats-users' => 'Antall brukere: $1',
+	'maintenance-stats-admins' => 'Antall administratorer: $1',
+	'maintenance-stats-images' => 'Antall filer: $1',
+	'maintenance-stats-views' => 'Antall sidevisninger: $1',
+	'maintenance-stats-update' => 'Oppdaterer database …',
+	'maintenance-move' => 'Flytter $1 til $2 …',
+	'maintenance-movefail' => 'Feil oppsto under flytting: $1.
+Avbryter flytting',
+	'maintenance-error' => 'Feil: $1',
+	'maintenance-memc-fake' => 'Du kjører en FakeMemCachedClient. Ingen statistikk kan oppgis.',
+	'maintenance-memc-requests' => 'Forespørsler',
+	'maintenance-memc-withsession' => 'med sesjon:',
+	'maintenance-memc-withoutsession' => 'uten sesjon:',
+	'maintenance-memc-total' => 'totalt:',
+	'maintenance-memc-parsercache' => 'Parsermellomlager',
+	'maintenance-memc-hits' => 'treff:',
+	'maintenance-memc-invalid' => 'ugyldig:',
+	'maintenance-memc-expired' => 'utgikk:',
+	'maintenance-memc-absent' => 'ikke til stede:',
+	'maintenance-memc-stub' => 'stubbgrense:',
+	'maintenance-memc-imagecache' => 'Bildemellomlager',
+	'maintenance-memc-misses' => 'bom:',
+	'maintenance-memc-updates' => 'Oppdateringer:',
+	'maintenance-memc-uncacheable' => 'Kan ikke mellomlagres:',
+	'maintenance-memc-diffcache' => 'Forskjellsmellomlager',
+	'maintenance-reassignEdits' => 'Bruk dette skjemaet for å flytte endringer fra en bruker til en annen.',
+	'maintenance-re-from' => 'Navn på bruker som endringer skal tas fra',
+	'maintenance-re-to' => 'Navn på bruker som endringer skal gis til',
+	'maintenance-re-force' => 'Flytt endringer selv om målbrukeren ikke finnes',
+	'maintenance-re-rc' => 'Ikke oppdater tabellen over siste endringer',
+	'maintenance-re-report' => 'Skriv ut detaljer av det som ville ha endret seg, men ikke oppdater det',
+	'maintenance-re-nf' => 'Fant ikke bruker $1',
+	'maintenance-re-rr' => 'Kjør skriptet igjen uten «$1» for å oppdatere.',
+	'maintenance-re-ce' => 'Nåværende redigeringer: $1',
+	'maintenance-re-de' => 'Slettede redigeringer: $1',
+	'maintenance-re-rce' => 'Bidrag på siste endringer: $1',
+	'maintenance-re-total' => 'Totalt antall oppføringer som skal endres: $1',
+	'maintenance-re-re' => 'Flytter endringer{{int:ellipsis}} fullført',
 );
 
 /** Dutch (Nederlands)
@@ -4417,151 +4462,6 @@ Stoggar flytting.',
 	'maintenance-re-re' => 'Flyttar endringar{{int:ellipsis}} gjort',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
- * @author Nghtwlkr
- * @author Simny
- */
-$messages['no'] = array(
-	'maintenance' => 'Kjør vedlikeholdsskript',
-	'maintenance-desc' => '[[Special:Maintenance|Nettgrensesnitt]] for ulike vedlikeholdsskript',
-	'right-maintenance' => 'Kjør vedlikeholdsskript gjennom [[Special:Maintenance]]',
-	'maintenance-backlink' => 'Tilbake til skriptvalget',
-	'maintenance-header' => 'Velg et skript å utføre nedenfor.
-Beskrivelser gis ved siden av hvert skript.',
-	'maintenance-error-badini' => 'Filen metadata.ini er enten skadet eller mangler. Last den ned utvidelsen Maintenance på nytt.',
-	'maintenance-error-invalidtype' => 'Det angitte skriptet ble ikke funnet',
-	'maintenance-error-badargs' => 'Du spesifiserte ikke alle de nødvendige alternativene',
-	'maintenance-generic-done' => 'ferdig',
-	'maintenance-generic-username' => 'Brukernavn',
-	'maintenance-generic-password' => 'Passord',
-	'maintenance-generic-reason' => 'Årsak',
-	'maintenance-cleanupTable-dry-run' => 'Utfør en tørrkjøring',
-	'maintenance-cleanupTable-check' => 'Ser etter dårlige titler...',
-	'maintenance-cleanupTable-checkfix' => 'Ser etter og fikser dårlige titler...',
-	'maintenance-cleanupTable-progress' => '$1 $2: $3% ferdig på $4; Antatt ferdig $5 [$6/$7] $8/sek <$9% oppdatert>',
-	'maintenance-cleanupTable-missingparam' => '$1: Mangler parameter $2',
-	'maintenance-cleanupTable-processing' => 'Behandler $1...',
-	'maintenance-cleanupTable-finished' => 'Ferdig $1... $2 av $3 rader oppdatert',
-	'maintenance-option-quiet' => 'Undertrykk utdata for ikke-feil',
-	'maintenance-option-confirm' => 'Bekreft',
-	'maintenance-option-required' => '(påkrevd)',
-	'maintenance-option-optional' => '(valgfri)',
-	'maintenance-output-success' => '$1 ble gjennomført uten uhell.',
-	'maintenance-benchmarkPurge-output-numsquids' => 'Det er $1 definerte Squid-tjenere:',
-	'maintenance-benchmarkPurge-output-trial' => '$1 titler på $2ms ($3ms hver)',
-	'maintenance-changePassword' => 'Bruk dette skjemaet for å endre en brukers passord',
-	'maintenance-changePassword-desc' => 'Endre en brukers passord',
-	'maintenance-changePassword-error-nouser' => 'Ingen slik bruker: $1',
-	'maintenance-changePassword-output-set' => 'Passord satt for $1',
-	'maintenance-checkAutoLoader' => 'Bruk dette skjemaet for å gjøre tilregnelighetssjekker på AutoLoader',
-	'maintenance-checkAutoLoader-desc' => 'AutoLoader tilregnelighetssjekker',
-	'maintenance-checkAutoLoader-output-list2' => '$1: Feil fil: fant i $2, listet i $3',
-	'maintenance-checkBadRedirects' => 'Bruk dette skjemaet for å se om sider markert som omdirigeringer faktisk er omdirigeringer',
-	'maintenance-checkBadRedirects-desc' => 'Ser etter dårlige omdirigeringer',
-	'maintenance-checkBadRedirects-output-header' => 'Henter omdirigeringer...',
-	'maintenance-checkBadRedirects-output-found' => 'Fant $1 omdirigeringer.
-Ser etter dårlige omdirigeringer...',
-	'maintenance-checkBadRedirects-output-footer' => '
-Ferdig.',
-	'maintenance-checkImages' => 'Bruk dette skjemaet for å se hvilke bilder på tjeneren din som er skadet',
-	'maintenance-checkImages-desc' => 'Sjekk bilder for å se om de finnes, er lesbare, etc',
-	'maintenance-checkImages-output-noaccess' => '$1: ikke tilgjengelig lokalt',
-	'maintenance-checkImages-output-missing' => '$1: mangler',
-	'maintenance-checkImages-output-isdir' => '$1: er en mappe',
-	'maintenance-checkImages-output-truncated' => '$1: trunkert, var $2',
-	'maintenance-checkImages-output-mismatch' => '$1: avvikende størrelse DB=$2, faktisk=$3',
-	'maintenance-checkImages-output-good' => 'Gode bilder: $1/$2',
-	'maintenance-checkSyntax' => 'Bruk dette skjemaet for å sjekke syntaksen til alle PHP-filene i MediaWiki',
-	'maintenance-checkSyntax-desc' => 'Sjekk syntaksen for alle PHP-filene i MediaWiki',
-	'maintenance-checkSyntax-output-buildlist' => 'Bygger filliste...',
-	'maintenance-checkSyntax-output-error' => 'Feil i $1 linje $2: $3',
-	'maintenance-checkSyntax-output-warning' => 'Advarsel i fil $1: $2 funnet',
-	'maintenance-checkSyntax-error-nofile' => 'Feil: finner ikke fil eller mappe $1',
-	'maintenance-checkSyntax-error-cantopen' => 'Kan ikke åpne fil $1',
-	'maintenance-createAndPromote' => 'Bruk dette skjemaet for å opprette en ny bruker og gjøre den til administrator.
-Kryss av i byråkratboksen om du ønsker å gjøre den til byråkrat også',
-	'maintenance-createAndPromote-desc' => 'Opprett en bruker og gjør til administrator',
-	'maintenance-deleteBatch' => 'Bruk dette skjemaet for å slette mange sider på én gang.
-Skriv én sidetittel per rad',
-	'maintenance-deleteBatch-desc' => 'Slett mange sider',
-	'maintenance-deleteRevision' => 'Bruk dette skjemaet for å slette mange revisjoner på én gang.
-Skriv ett revisjonsnummer per rad',
-	'maintenance-deleteRevision-desc' => 'Fjern revisjoner fra databasen',
-	'maintenance-initEditCount-desc' => 'Regne om redigeringstelleren for brukere',
-	'maintenance-initStats' => 'Bruk dette skjemaet for å regne ut sidestatistikken på nytt, spesielt om du vil regne ut sidevisninger på nytt',
-	'maintenance-initStats-desc' => 'Regne om sidestatistikken',
-	'maintenance-moveBatch' => 'Bruk dette skjemaet for å flytte mange sider på én gang.
-Hver linje bør oppgi kildeside og målside adskilt med strek (|)',
-	'maintenance-moveBatch-desc' => 'Flytte mange sider',
-	'maintenance-reassignEdits-desc' => 'Flytt endringer fra en bruker til en annen',
-	'maintenance-runJobs-desc' => 'Kjøre jobber i jobbkøen',
-	'maintenance-showJobs-desc' => 'Vise en liste over jobber som venter i jobbkøen',
-	'maintenance-sql' => 'Bruk dette skjemaet for å utføre en SQL-spørring på databasen.',
-	'maintenance-sql-desc' => 'Utfør en SQL-spørring',
-	'maintenance-stats-desc' => 'Vis mellomlagret statistikk',
-	'maintenance-eval' => 'Bruk dette skjemaet for å evaluere PHP-kode i MediaWiki-miljøet.',
-	'maintenance-eval-desc' => 'Evaluer PHP-kode i MediaWiki-omgivelsene',
-	'maintenance-update' => 'Bruk UPDATE under oppdatering av tabell? Om uavkrysset brukes DELETE/INSERT i stedet.',
-	'maintenance-noviews' => 'Kryss av her for ikke å oppdatere sidevisninger',
-	'maintenance-invalidname' => 'Ugyldig brukernavn.',
-	'maintenance-userexists' => 'Brukeren finnes allerede.',
-	'maintenance-invalidtitle' => 'Ugyldig tittel «$1».',
-	'maintenance-titlenoexist' => 'Den oppgitte tittelen («$1») finnes ikke.',
-	'maintenance-failed' => 'MISLYKTES',
-	'maintenance-deleted' => 'SLETTET',
-	'maintenance-revdelete' => 'Sletter {{PLURAL:$3|revisjonen|revisjonene}} $1 fra wikien $2',
-	'maintenance-revnotfound' => 'Revisjon $1 ikke funnet.',
-	'maintenance-stats-edits' => 'Antal redigeringer: $1',
-	'maintenance-stats-articles' => 'Antall sider i hovednavnerommet: $1',
-	'maintenance-stats-pages' => 'Antall sider: $1',
-	'maintenance-stats-users' => 'Antall brukere: $1',
-	'maintenance-stats-admins' => 'Antall administratorer: $1',
-	'maintenance-stats-images' => 'Antall filer: $1',
-	'maintenance-stats-views' => 'Antall sidevisninger: $1',
-	'maintenance-stats-update' => 'Oppdaterer database …',
-	'maintenance-move' => 'Flytter $1 til $2 …',
-	'maintenance-movefail' => 'Feil oppsto under flytting: $1.
-Avbryter flytting',
-	'maintenance-error' => 'Feil: $1',
-	'maintenance-memc-fake' => 'Du kjører en FakeMemCachedClient. Ingen statistikk kan oppgis.',
-	'maintenance-memc-requests' => 'Forespørsler',
-	'maintenance-memc-withsession' => 'med sesjon:',
-	'maintenance-memc-withoutsession' => 'uten sesjon:',
-	'maintenance-memc-total' => 'totalt:',
-	'maintenance-memc-parsercache' => 'Parsermellomlager',
-	'maintenance-memc-hits' => 'treff:',
-	'maintenance-memc-invalid' => 'ugyldig:',
-	'maintenance-memc-expired' => 'utgikk:',
-	'maintenance-memc-absent' => 'ikke til stede:',
-	'maintenance-memc-stub' => 'stubbgrense:',
-	'maintenance-memc-imagecache' => 'Bildemellomlager',
-	'maintenance-memc-misses' => 'bom:',
-	'maintenance-memc-updates' => 'Oppdateringer:',
-	'maintenance-memc-uncacheable' => 'Kan ikke mellomlagres:',
-	'maintenance-memc-diffcache' => 'Forskjellsmellomlager',
-	'maintenance-reassignEdits' => 'Bruk dette skjemaet for å flytte endringer fra en bruker til en annen.',
-	'maintenance-re-from' => 'Navn på bruker som endringer skal tas fra',
-	'maintenance-re-to' => 'Navn på bruker som endringer skal gis til',
-	'maintenance-re-force' => 'Flytt endringer selv om målbrukeren ikke finnes',
-	'maintenance-re-rc' => 'Ikke oppdater tabellen over siste endringer',
-	'maintenance-re-report' => 'Skriv ut detaljer av det som ville ha endret seg, men ikke oppdater det',
-	'maintenance-re-nf' => 'Fant ikke bruker $1',
-	'maintenance-re-rr' => 'Kjør skriptet igjen uten «$1» for å oppdatere.',
-	'maintenance-re-ce' => 'Nåværende redigeringer: $1',
-	'maintenance-re-de' => 'Slettede redigeringer: $1',
-	'maintenance-re-rce' => 'Bidrag på siste endringer: $1',
-	'maintenance-re-total' => 'Totalt antall oppføringer som skal endres: $1',
-	'maintenance-re-re' => 'Flytter endringer{{int:ellipsis}} fullført',
-);
-
-/** Novial (Novial)
- * @author Malafaya
- */
-$messages['nov'] = array(
-	'maintenance-reason' => 'Resone',
-);
-
 /** Occitan (Occitan)
  * @author Cedric31
  */
@@ -4653,11 +4553,23 @@ Arrèst del desplaçament.',
 	'maintenance-re-re' => 'Reafectacion dels cambiaments{{int:ellipsis}} fach',
 );
 
-/** Ossetic (Иронау)
+/** Oriya (ଓଡ଼ିଆ)
+ * @author Odisha1
+ * @author Psubhashish
+ */
+$messages['or'] = array(
+	'maintenance-generic-done' => 'କରାଯାଇଛି',
+	'maintenance-generic-reason' => 'କାରଣ',
+	'maintenance-option-confirm' => 'ଥୟ କରିବେ',
+	'maintenance-checkBadRedirects-output-footer' => 'କରାଯାଇଛି.',
+	'maintenance-memc-requests' => 'ଅନୁରୋଧ',
+	'maintenance-memc-updates' => 'ଅଦ୍ୟତନ:',
+);
+
+/** Ossetic (Ирон)
  * @author Amikeco
  */
 $messages['os'] = array(
-	'maintenance-reason' => 'Аххос',
 	'maintenance-deleted' => 'АППÆРСТ',
 );
 
@@ -4665,23 +4577,18 @@ $messages['os'] = array(
  * @author Xqt
  */
 $messages['pdc'] = array(
-	'maintenance-name' => 'Yuuser-Naame',
-	'maintenance-password' => 'Paesswatt',
-	'maintenance-reason' => 'Grund',
-);
-
-/** Plautdietsch (Plautdietsch)
- * @author Slomox
- */
-$messages['pdt'] = array(
-	'maintenance-name' => 'Bruckernome',
-	'maintenance-password' => 'Passwuat',
+	'maintenance-generic-done' => 'geduh',
+	'maintenance-generic-username' => 'Yuuser-Naame',
+	'maintenance-generic-password' => 'Paesswatt',
+	'maintenance-checkBadRedirects-output-footer' => 'Geduh.',
+	'maintenance-deleted' => 'GELESCHT',
 );
 
 /** Polish (Polski)
  * @author Maikking
  * @author McMonster
  * @author Sp5uhe
+ * @author Woytecr
  */
 $messages['pl'] = array(
 	'maintenance' => 'Uruchom skrypty konserwacyjne',
@@ -4690,9 +4597,19 @@ $messages['pl'] = array(
 	'maintenance-backlink' => 'Wróć do wyboru skryptu',
 	'maintenance-header' => 'Wybierz skrypt, który chcesz uruchomić.
 Przy nazwach skryptów znajdują się ich opisy.',
+	'maintenance-generic-done' => 'gotowe',
+	'maintenance-generic-username' => 'Nazwa użytkownika',
+	'maintenance-generic-password' => 'Hasło',
+	'maintenance-generic-reason' => 'Powód',
+	'maintenance-cleanupTable-processing' => 'Przetwarzanie $1...',
 	'maintenance-option-confirm' => 'Potwierdź',
+	'maintenance-option-required' => '(wymagane)',
+	'maintenance-option-optional' => '(opcjonalne)',
+	'maintenance-attachLatest-output-done' => 'Gotowe! Przetworzono $1 {{PLURAL:$1|stronę|strony|stron}}.',
 	'maintenance-changePassword' => 'Użyj tego formularza, by zmienić hasło użytkownika',
 	'maintenance-changePassword-desc' => 'Zmień hasło użytkownika',
+	'maintenance-changePassword-output-set' => 'Ustawiono hasło dla $1',
+	'maintenance-checkBadRedirects-output-footer' => 'Gotowe.',
 	'maintenance-createAndPromote' => 'Użyj tego formularza, by utworzyć nowe konto użytkownika i nadać mu uprawnienia administratora.
 Zaznacz pole wyboru poniżej, aby przyznać mu również uprawnienia biurokraty.',
 	'maintenance-createAndPromote-desc' => 'Utwórz użytkownika i nadaj mu uprawnienia administratora',
@@ -4780,7 +4697,7 @@ $messages['pms'] = array(
 	'maintenance-backlink' => 'André a la selession dël senari',
 	'maintenance-header' => "Për piasì ch'a selession-a un senari sì-sota da fé giré.
 Le descrission a son tacà a minca senari",
-	'maintenance-error-invalidtype' => "Lë script specificà a l'é pa stàit trovà",
+	'maintenance-error-invalidtype' => "Ël copion specificà a l'é pa stàit trovà",
 	'maintenance-option-confirm' => 'Conferma',
 	'maintenance-output-success' => "$1 a l'ha girà da bin!",
 	'maintenance-changePassword' => "Dovré ës formolari për cangé na ciav ëd n'utent",
@@ -5430,15 +5347,6 @@ $messages['ru'] = array(
 	'maintenance-re-re' => 'Переназначение правок{{int:ellipsis}} завершено',
 );
 
-/** Rusyn (русиньскый язык)
- * @author Gazeb
- */
-$messages['rue'] = array(
-	'maintenance-name' => 'Мено хоснователя',
-	'maintenance-password' => 'Гесло',
-	'maintenance-reason' => 'Причіна',
-);
-
 /** Slovak (Slovenčina)
  * @author Helix84
  */
@@ -5529,18 +5437,25 @@ Presúvanie sa ruší',
 	'maintenance-re-re' => 'Zmena pôvodcu úprav{{int:ellipsis}} hotovo',
 );
 
-/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+/** Slovenian (Slovenščina)
+ * @author Dbc334
+ */
+$messages['sl'] = array(
+	'maintenance-generic-username' => 'Uporabniško ime',
+);
+
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
  * @author Rancher
  * @author Жељко Тодоровић
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
 	'maintenance' => 'Покрени скрипте за одржавање',
-	'maintenance-desc' => '[[Special:Maintenance|Вики интерфејс]] за разне скрипте за одржавање',
+	'maintenance-desc' => '[[Special:Maintenance|Вики-сучеље]] за разне скриптове за одржавање',
 	'maintenance-backlink' => 'Повратак на обележавање скрипти',
 	'maintenance-header' => 'Молимо Вас да испот означите скрипту коју треба покренути.
 Поред сваке скрипте се налази одговарајући опис.',
-	'maintenance-error-invalidtype' => 'Непознат тип!',
+	'maintenance-error-invalidtype' => 'Не могу да пронађем наведени скрипт',
 	'maintenance-option-confirm' => 'Потврди',
 	'maintenance-output-success' => '$1 се успешно извршила!',
 	'maintenance-changePassword' => 'Користите ову форму да бисте променили лозинку корисника',
@@ -5591,7 +5506,7 @@ $messages['sr-ec'] = array(
 	'maintenance-memc-withsession' => 'са сесијом:',
 	'maintenance-memc-withoutsession' => 'без сесије:',
 	'maintenance-memc-total' => 'укупно:',
-	'maintenance-memc-parsercache' => 'Кеш парсера',
+	'maintenance-memc-parsercache' => 'Кеш рашчлањивача',
 	'maintenance-memc-hits' => 'погодака:',
 	'maintenance-memc-invalid' => 'неисправно:',
 	'maintenance-memc-expired' => 'истекло:',
@@ -5612,7 +5527,7 @@ $messages['sr-ec'] = array(
 	'maintenance-re-re' => 'Приписивање измена{{int:ellipsis}} готово',
 );
 
-/** Serbian Latin ekavian (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪Srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -5621,7 +5536,7 @@ $messages['sr-el'] = array(
 	'maintenance-backlink' => 'Povratak na obeležavanje skripti',
 	'maintenance-header' => 'Molimo Vas da ispot označite skriptu koju treba pokrenuti.
 Pored svake skripte se nalazi odgovarajući opis.',
-	'maintenance-error-invalidtype' => 'Nepoznat tip!',
+	'maintenance-error-invalidtype' => 'Ne mogu da pronađem navedeni skript',
 	'maintenance-option-confirm' => 'Potvrdi',
 	'maintenance-output-success' => '$1 se uspešno izvršila!',
 	'maintenance-changePassword' => 'Koristite ovu formu da biste promenili lozinku korisnika',
@@ -5697,9 +5612,6 @@ Opozivanje premeštanja',
  * @author Irwangatot
  */
 $messages['su'] = array(
-	'maintenance-name' => 'Landihan',
-	'maintenance-password' => 'Sandi',
-	'maintenance-reason' => 'Alesan',
 	'maintenance-deleted' => 'DIHAPUS',
 );
 
@@ -5796,6 +5708,14 @@ Avbryt flyttning',
 	'maintenance-re-re' => 'Flyttar redigeringar{{int:ellipsis}} klart',
 );
 
+/** Tamil (தமிழ்)
+ * @author TRYPPN
+ */
+$messages['ta'] = array(
+	'maintenance-deleted' => 'நீக்கப்பட்டுவிட்டது',
+	'maintenance-memc-total' => 'மொத்தம்:',
+);
+
 /** Telugu (తెలుగు)
  * @author C.Chandra Kanth Rao
  * @author Veeven
@@ -5848,13 +5768,6 @@ $messages['tet'] = array(
 $messages['th'] = array(
 	'maintenance-option-confirm' => 'ยืนยัน',
 	'maintenance-memc-total' => 'รวม:',
-);
-
-/** Turkmen (Türkmençe)
- * @author Hanberke
- */
-$messages['tk'] = array(
-	'maintenance-name' => 'Ulanyjy ady',
 );
 
 /** Tagalog (Tagalog)
@@ -6087,27 +6000,37 @@ Her betiğin yanında açıklamalarına yer verilmiştir.',
 	'maintenance-re-total' => 'Değiştirilecek toplam girdi: $1',
 );
 
-/** ئۇيغۇرچە (ئۇيغۇرچە)
- * @author Alfredie
- */
-$messages['ug-arab'] = array(
-	'maintenance-name' => 'ئىشلەتكۇچى ئىسمى',
-);
-
-/** Uighur (Latin) (Uyghurche‎ / ئۇيغۇرچە (Latin))
- * @author Jose77
- */
-$messages['ug-latn'] = array(
-	'maintenance-name' => 'Ishletkuchi ismi',
-);
-
 /** Ukrainian (Українська)
  * @author Prima klasy4na
  * @author Тест
  */
 $messages['uk'] = array(
-	'maintenance-reason' => 'Причина',
-	'maintenance-confirm' => 'Підтвердити',
+	'maintenance' => 'Запуск скриптів обслуговування',
+	'maintenance-desc' => '[[Special:Maintenance|Вікі інтерфейс]] для різноманітних скриптів обслуговування',
+	'right-maintenance' => 'Запуск скриптів обслуговування через [[Special:Maintenance]]',
+	'maintenance-backlink' => 'Повернутися до вибору скрипту',
+	'maintenance-initEditCount-desc' => 'Перерахувати кількість редагувань користувачів',
+	'maintenance-initStats-desc' => 'Перерахувати статистику сайту',
+	'maintenance-invalidname' => "Неправильне ім'я користувача!",
+	'maintenance-userexists' => 'Користувач вже існує!',
+	'maintenance-invalidtitle' => 'Неприпустима назва "$1"!',
+	'maintenance-titlenoexist' => 'Вказаного заголовку ("$1") не існує!',
+	'maintenance-deleted' => 'ВИЛУЧЕНО',
+	'maintenance-revnotfound' => 'Версію $1 не знайдено!',
+	'maintenance-stats-edits' => 'Кількість редагувань: $1',
+	'maintenance-stats-articles' => 'Кількість сторінок в основному просторі назв: $1',
+	'maintenance-stats-pages' => 'Кількість сторінок: $1',
+	'maintenance-stats-users' => 'Кількість користувачів: $1',
+	'maintenance-stats-admins' => 'Кількість адміністраторів: $1',
+	'maintenance-stats-images' => 'Кількість файлів: $1',
+	'maintenance-stats-views' => 'Кількість переглядів сторінок: $1',
+	'maintenance-stats-update' => 'Оновлення бази даних{{int:ellipsis}}',
+	'maintenance-error' => 'Помилка: $1',
+	'maintenance-memc-requests' => 'Запити',
+	'maintenance-memc-total' => 'всього:',
+	'maintenance-memc-parsercache' => 'Кеш парсера',
+	'maintenance-memc-imagecache' => 'Кеш зображень',
+	'maintenance-re-nf' => 'Користувача $1 не знайдено',
 );
 
 /** Veps (Vepsan kel')
@@ -6258,15 +6181,18 @@ Topätükam pestöpädon.',
 	'maintenance-re-re' => 'Redakams padönugivülons{{int:ellipsis}} peledunon.',
 );
 
-/** Wu (吴语) */
-$messages['wuu'] = array(
-	'maintenance-reason' => '理由：',
+/** Walloon (Walon)
+ * @author Lucyin
+ */
+$messages['wa'] = array(
+	'maintenance-deleted' => 'DISFACÉ',
 );
 
 /** Yiddish (ייִדיש)
  * @author פוילישער
  */
 $messages['yi'] = array(
+	'maintenance-generic-username' => 'באַניצער נאָמען',
 	'maintenance-option-confirm' => 'באַשטעטיגן',
 	'maintenance-invalidname' => 'אומגילטיקער באַניצער נאָמען!',
 );
@@ -6332,6 +6258,8 @@ $messages['zh-hans'] = array(
 	'maintenance-checkSyntax-error-nofile' => '错误：找不到文件或目录$1',
 	'maintenance-checkSyntax-error-cantopen' => '无法打开文件$1',
 	'maintenance-deleteBatch-desc' => '大量删除页面',
+	'maintenance-deleteRevision-desc' => '从资料库中删除修改',
+	'maintenance-initStats-desc' => '重新计算网站的统计资料',
 	'maintenance-moveBatch-desc' => '大量移动页面',
 	'maintenance-runJobs-desc' => '运行工作队列中的工作',
 	'maintenance-runJobs-option-maxjobs' => '最大的工作运行数量',
@@ -6384,17 +6312,85 @@ $messages['zh-hans'] = array(
  * @author Wrightbus
  */
 $messages['zh-hant'] = array(
+	'maintenance' => '運行維護腳本',
+	'maintenance-desc' => '各種維護腳本的[[Special:Maintenance|wiki界面]]',
+	'right-maintenance' => '通過[[Special:Maintenance]]運行維護腳本',
+	'maintenance-backlink' => '返回到腳本選擇',
+	'maintenance-header' => '請在下面選擇一個腳本來執行。描述在各腳本的旁邊',
+	'maintenance-error-badini' => 'metadata.ini文件已損壞或丟失。請重新下載Maintenance擴展',
+	'maintenance-error-invalidtype' => '找不到指定的腳本',
+	'maintenance-error-badargs' => '您沒有指定所有必填的選項',
+	'maintenance-generic-done' => '做好了',
+	'maintenance-generic-username' => '用戶名',
+	'maintenance-generic-password' => '密碼',
+	'maintenance-generic-reason' => '原因',
+	'maintenance-cleanupTable-dry-run' => '執行預運行',
+	'maintenance-cleanupTable-check' => '檢查壞的標題...',
+	'maintenance-cleanupTable-checkfix' => '檢查和修復壞的標題...',
+	'maintenance-cleanupTable-missingparam' => '$1：缺少參數$2',
+	'maintenance-cleanupTable-processing' => '處理$1...',
+	'maintenance-cleanupTable-finished' => '完成$1... $3中的$2行已更新',
+	'maintenance-option-quiet' => '阻止非錯誤輸出',
 	'maintenance-option-confirm' => '確認',
+	'maintenance-option-batch-size' => '每批運行以下次數的操作，默認：$1',
+	'maintenance-option-required' => '（必須要）',
+	'maintenance-option-optional' => '（可選）',
+	'maintenance-output-success' => '$1已成功運行！',
+	'maintenance-output-failure' => '$1未成功運行！',
+	'maintenance-attachLatest-option-fix' => '實際修復項目，否則預運行',
+	'maintenance-attachLatest-output-begin' => '尋找page_latest設置為0的頁面...',
+	'maintenance-attachLatest-output-done' => '完成！$1個頁面已處理。',
+	'maintenance-changePassword' => '使用此表單來更改用戶的密碼',
 	'maintenance-changePassword-desc' => '變更使用者的密碼',
+	'maintenance-changePassword-error-nouser' => '沒有這樣的用戶：$1',
+	'maintenance-changePassword-output-set' => '已為$1設置密碼',
+	'maintenance-checkBadRedirects' => '使用此表單來查看標記為重定向的頁面是否真的是重定向',
+	'maintenance-checkBadRedirects-desc' => '檢查壞的重定向',
+	'maintenance-checkBadRedirects-output-header' => '讀取重定向...',
+	'maintenance-checkBadRedirects-output-found' => '找到了$1個重定向。
+檢查壞的重定向...',
+	'maintenance-checkBadRedirects-output-footer' => '
+完成。',
+	'maintenance-checkImages' => '使用此表單來查看您的服務器上的哪些圖像已損壞',
+	'maintenance-checkImages-desc' => '檢查圖像以查看它們是否存在、可讀等等',
+	'maintenance-checkImages-output-noaccess' => '$1：本地不可訪問',
+	'maintenance-checkImages-output-missing' => '$1：丟失',
+	'maintenance-checkImages-output-isdir' => '$1：是一個目錄',
+	'maintenance-checkImages-output-truncated' => '$1：被截斷，原為$2',
+	'maintenance-checkImages-output-mismatch' => '$1：大小不匹配 數據庫=$2，實際=$3',
+	'maintenance-checkImages-output-good' => '好圖片：$1/$2',
+	'maintenance-checkSyntax-output-svnlist' => '從Subversion獲取列表...',
+	'maintenance-checkSyntax-output-buildlist' => '建立文件列表...',
+	'maintenance-checkSyntax-output-error' => '文件$1中於行$2的錯誤：$3',
+	'maintenance-checkSyntax-output-warning' => '文件$1中的警告：$2',
+	'maintenance-checkSyntax-error-nofile' => '錯誤：找不到文件或目錄$1',
+	'maintenance-checkSyntax-error-cantopen' => '無法打開文件$1',
 	'maintenance-deleteBatch-desc' => '大量刪除頁面',
 	'maintenance-deleteRevision-desc' => '從資料庫中刪除修改',
 	'maintenance-initStats-desc' => '重新計算網站的統計資料',
+	'maintenance-moveBatch-desc' => '大量移動頁面',
+	'maintenance-runJobs-desc' => '運行工作隊列中的工作',
+	'maintenance-runJobs-option-maxjobs' => '最大的工作運行數量',
+	'maintenance-runJobs-option-type' => '要運行的工作類型',
+	'maintenance-runJobs-option-procs' => '要使用的進程數',
+	'maintenance-showJobs-desc' => '顯示工作隊列中的掛起的工作列表',
+	'maintenance-showJobs-option-group' => '顯示的每個工作類型的工作數目',
+	'maintenance-sql' => '使用此表單來在數據庫上執行SQL查詢。',
+	'maintenance-sql-desc' => '執行SQL查詢',
+	'maintenance-sql-option-file' => '要執行的SQL',
+	'maintenance-sql-output-aff' => '查詢完成，$1行被影響',
+	'maintenance-sql-error-cantopen' => '無法打開輸入文件',
+	'maintenance-stats-desc' => '顯示Memcached統計信息',
 	'maintenance-invalidname' => '無效的使用者名稱！',
 	'maintenance-userexists' => '用戶已存在！',
 	'maintenance-invalidtitle' => '無效的標題「$1」！',
 	'maintenance-failed' => '失敗',
 	'maintenance-deleted' => '刪除的',
+	'maintenance-revnotfound' => '修訂$1沒有找到！',
 	'maintenance-stats-edits' => '編輯數：$1',
+	'maintenance-stats-articles' => '主名字空間中的頁面數：$1',
+	'maintenance-stats-pages' => '頁面數：$1',
+	'maintenance-stats-users' => '用戶數：$1',
 	'maintenance-stats-admins' => '管理員人數：$1',
 	'maintenance-stats-images' => '檔案數量：$1',
 	'maintenance-stats-views' => '瀏覽數量：$1',
@@ -6407,9 +6403,15 @@ $messages['zh-hant'] = array(
 	'maintenance-memc-hits' => '點擊數：',
 	'maintenance-memc-invalid' => '無效：',
 	'maintenance-memc-expired' => '到期日：',
+	'maintenance-memc-absent' => '缺失：',
+	'maintenance-memc-imagecache' => '圖片緩存',
+	'maintenance-memc-misses' => '未命中：',
 	'maintenance-memc-updates' => '更新：',
 	'maintenance-memc-uncacheable' => '不可快取：',
+	'maintenance-memc-diffcache' => '差異緩存',
+	'maintenance-re-nf' => '用戶$1沒有找到',
 	'maintenance-re-ce' => '目前編輯：$1',
 	'maintenance-re-de' => '刪除編輯：$1',
+	'maintenance-re-rce' => '最近更改條目：$1',
 );
 
