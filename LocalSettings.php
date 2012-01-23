@@ -157,8 +157,6 @@ require_once( "$IP/extensions/Cite/Cite.php");
 require_once( "$IP/extensions/Validator/Validator.php" );
 include_once( "$IP/extensions/SemanticMediaWiki/SemanticMediaWiki.php" );
 require_once( "$IP/extensions/ParserFunctions/ParserFunctions.php" );
-$wgGroupPermissions['bureaucrat']['maintenance'] = true;
-require_once("$IP/extensions/Maintenance/Maintenance.php");
 enableSemantics('wayak.uni-kaji.com');
 
 # Cavendish skin settings
