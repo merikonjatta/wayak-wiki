@@ -158,6 +158,8 @@ require_once( "$IP/extensions/Validator/Validator.php" );
 include_once( "$IP/extensions/SemanticMediaWiki/SemanticMediaWiki.php" );
 require_once( "$IP/extensions/ParserFunctions/ParserFunctions.php" );
 enableSemantics('wayak.uni-kaji.com');
+require_once("extensions/AvbDisqus/avbdisqus.php");
+$wgAvbDisqusWebsiteName = strtolower("wayak");
 
 # Cavendish skin settings
 $cavendishLogoURL = "$wgStylePath/wayak/logo.png";
